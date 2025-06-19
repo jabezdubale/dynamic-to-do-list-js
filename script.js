@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     li.textContent = taskText;
     const delBut = document.createElement("button");
     delBut.textContent = "Remove";
-    delBut.className = "remove-btn";
+    delBut.classList.add("remove-btn");
 
     delBut.addEventListener("click", () => {
       li.remove();
