@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const taskInput = document.getElementById("task-input");
   const taskList = document.getElementById("task-list");
 
-  function loadLocalTask() {
+  function loadTasks() {
     tasks.forEach((value) => {
       createTaskElement(value);
     });
   }
-  loadLocalTask();
+  loadTasks();
 
   function addTask() {
     let taskText = taskInput.value.trim();
